@@ -9,6 +9,9 @@ import UseRefState from './components/UseRefState';
 import UseReducerHook from './components/UseReducerHook';
 import UseReducerCounter from './components/UseReducerCounter';
 import UseReducerObject from "./components/UseReducerObject";
+import UseReducerTodo from './components/UseReducerTodo';
+import UseCallback from './components/UseCallBack/UseCallback';
+import Usememo from './components/Usememo/Usememo';
 function App() {
   return (
     <>
@@ -37,7 +40,13 @@ function App() {
       {"UseReducerHookCounter"}<br /><br />
       <UseReducerCounter />
       {"UseReducerObject"}<br /><br />
-      <UseReducerObject/>
+      <UseReducerObject />
+      {"UseReducerTodo"}<br /><br />
+      <UseReducerTodo /><br/>
+      {"UseCallback"}<br />
+      <UseCallback /><br/>
+      {"Usememo"}
+      <Usememo/>
       
       
     </>
