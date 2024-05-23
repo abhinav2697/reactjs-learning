@@ -12,6 +12,11 @@ import UseReducerObject from "./components/UseReducerObject";
 import UseReducerTodo from './components/UseReducerTodo';
 import UseCallback from './components/UseCallBack/UseCallback';
 import Usememo from './components/Usememo/Usememo';
+import UseCallbackCounter from './components/UseCallBack/UseCallbackCounter';
+import UseMemoCounter from './components/Usememo/UseMemoCounter';
+import UseLayoutEffectHook from './components/UseLayoutEffectHook';
+import UseLayoutSmoothScroll from "./components/UseLayoutSmoothscroll";
+import UseLayoutAutoFocus from "./components/UseLayoutAutoFocus";
 function App() {
   return (
     <>
@@ -45,9 +50,19 @@ function App() {
       <UseReducerTodo /><br/>
       {"UseCallback"}<br />
       <UseCallback /><br/>
-      {"Usememo"}
-      <Usememo/>
-      
+      {"Usememo"}<br/>
+      <Usememo /><br />
+      {"UseCallbackCounter"}<br />
+      <UseCallbackCounter /><br />
+      {"UseMemoCounter"}<br />
+      <UseMemoCounter /><br />
+      {"UseLayoutEffect"}<br />
+      <UseLayoutEffectHook /><br />
+      {"UseLayoutSmoothScroll"}<br />
+      <UseLayoutSmoothScroll /><br />
+      {"UseLayoutAutoFocus"}<br />
+      <UseLayoutAutoFocus/>
+    
       
     </>
   );
