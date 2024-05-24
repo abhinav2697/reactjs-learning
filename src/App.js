@@ -17,6 +17,9 @@ import UseMemoCounter from './components/Usememo/UseMemoCounter';
 import UseLayoutEffectHook from './components/UseLayoutEffectHook';
 import UseLayoutSmoothScroll from "./components/UseLayoutSmoothscroll";
 import UseLayoutAutoFocus from "./components/UseLayoutAutoFocus";
+import ParentComponent from './components/UseImperativeHandle';
+import UseDebugValueHook from './components/UseDebugValueHook';
+import UseDebugValueData from './components/UseDebugValueData';
 function App() {
   return (
     <>
@@ -61,7 +64,13 @@ function App() {
       {"UseLayoutSmoothScroll"}<br />
       <UseLayoutSmoothScroll /><br />
       {"UseLayoutAutoFocus"}<br />
-      <UseLayoutAutoFocus/>
+      <UseLayoutAutoFocus /><br />
+      {"UseImperativeHandle"}<br />
+      <ParentComponent /><br />
+      {"UseDebugValueHook"}<br />
+      <UseDebugValueHook /><br />
+      {"UseDebugValueDataHook"}<br /><br/>
+      <UseDebugValueData/>
     
       
     </>
