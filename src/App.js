@@ -20,6 +20,19 @@ import UseLayoutAutoFocus from "./components/UseLayoutAutoFocus";
 import ParentComponent from './components/UseImperativeHandle';
 import UseDebugValueHook from './components/UseDebugValueHook';
 import UseDebugValueData from './components/UseDebugValueData';
+import CustomHookData from './components/CustomHooks/CustomHookData';
+// import LocalStorage from "./components/CustomHooks/LocalStorage";
+import Event from "./components/events/Event";
+import OnPaste from "./components/events/OnPaste";
+import OnInput from "./components/events/OnInput";
+import OnCut from './components/events/OnCut';
+import OnFocus from './components/events/OnFocus';
+import OnMouseUp from './components/events/OnMouseUp';
+import Onsubmit from './components/events/Onsubmit';
+import Onscroll from './components/events/Onscroll';
+import OnKeyUp from './components/events/OnKeyUp';
+import OnPointerUp from './components/events/OnPointerUp';
+import OnMouseEnter from './components/events/OnMouseEnter';
 function App() {
   return (
     <>
@@ -70,8 +83,34 @@ function App() {
       {"UseDebugValueHook"}<br />
       <UseDebugValueHook /><br />
       {"UseDebugValueDataHook"}<br /><br/>
-      <UseDebugValueData/>
-    
+      <UseDebugValueData /><br />
+      {"CustomHookData"}<br />
+      <CustomHookData /><br />
+      {/* {"LocalStorageCustomHook"}<br />
+      <LocalStorage /><br /> */}
+      <hr />
+      {"React events"}<br />
+      <Event/>
+      {"OnPasteEvent"}<br />
+      <OnPaste />
+      {"OnInputEvent"}<br />
+      <OnInput />
+      {"OnCut"}<br />
+      <OnCut />
+      {"OnFocus"}<br />
+      <OnFocus /><br />
+      {"OnMouseUp"}<br />
+      <OnMouseUp /><br />
+      {"Onsubmit"}<br />
+      <Onsubmit />
+      {"OnScroll"}<br />
+      <Onscroll />
+      {"OnKeyUp"}<br />
+      <OnKeyUp />
+      {"OnPointerUp"}<br />
+      <OnPointerUp />
+      {"OnMouseEnter"}<br />
+      <OnMouseEnter/>
       
     </>
   );
