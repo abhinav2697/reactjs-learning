@@ -95,21 +95,21 @@ function App() {
       <OnPaste />
       {"OnInputEvent"}<br />
       <OnInput />
-      {"OnCut"}<br />
+      {"OnCut"}<br/>
       <OnCut />
       {"OnFocus"}<br />
       <OnFocus /><br />
       {"OnMouseUp"}<br />
       <OnMouseUp /><br />
-      {"Onsubmit"}<br />
+      {"Onsubmit"}<br/>
       <Onsubmit />
-      {"OnScroll"}<br />
+      {"OnScroll"}<br/>
       <Onscroll />
-      {"OnKeyUp"}<br />
+      {"OnKeyUp"}<br/>
       <OnKeyUp />
-      {"OnPointerUp"}<br />
+      {"OnPointerUp"}<br/>
       <OnPointerUp />
-      {"OnMouseEnter"}<br />
+      {"OnMouseEnter"}<br/>
       <OnMouseEnter/>
       
     </>
