@@ -33,6 +33,7 @@ import Onscroll from './components/events/Onscroll';
 import OnKeyUp from './components/events/OnKeyUp';
 import OnPointerUp from './components/events/OnPointerUp';
 import OnMouseEnter from './components/events/OnMouseEnter';
+import AxiosCrud from './components/Axios/AxiosCrud';
 function App() {
   return (
     <>
@@ -95,22 +96,24 @@ function App() {
       <OnPaste />
       {"OnInputEvent"}<br />
       <OnInput />
-      {"OnCut"}<br/>
+      {"OnCut"}<br />
       <OnCut />
       {"OnFocus"}<br />
       <OnFocus /><br />
       {"OnMouseUp"}<br />
       <OnMouseUp /><br />
-      {"Onsubmit"}<br/>
+      {"Onsubmit"}<br />
       <Onsubmit />
-      {"OnScroll"}<br/>
+      {"OnScroll"}<br />
       <Onscroll />
-      {"OnKeyUp"}<br/>
+      {"OnKeyUp"}<br />
       <OnKeyUp />
-      {"OnPointerUp"}<br/>
+      {"OnPointerUp"}<br />
       <OnPointerUp />
-      {"OnMouseEnter"}<br/>
-      <OnMouseEnter/>
+      {"OnMouseEnter"}<br />
+      <OnMouseEnter /><hr></hr>
+      {"Axios Crud"}<br /><br />
+      <AxiosCrud />
       
     </>
   );
