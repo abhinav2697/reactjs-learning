@@ -1,0 +1,15 @@
+.App{
+    width: 30vw;
+    margin:auto;
+    text-align: center;
+    color: green;
+    font-size: 23px;
+}
+
+.Shaded{
+    background-color: lightblue;
+    height: 200px;
+    width: 300px;
+    margin:auto;
+    border-radius: 6px;
+}
