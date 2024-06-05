@@ -41,6 +41,8 @@ import InlineStyles from './components/StylingCss/InlineStyles';
 import UserCardComponent from './components/StylingCss/UserCardComponent';
 import StyledModule from './components/StylingCss/StyledModule';
 import ButtonModule from './components/StylingCss/ButtonModule';
+import RouteExample from './components/Router/RouteExample';
+import AppLayout from './components/Router/Pages/AppLayout';
 function App() {
   return (
     <>
@@ -128,7 +130,10 @@ function App() {
       <InlineStyles />
       <UserCardComponent/>
       <StyledModule />
-      <ButtonModule/>
+      <ButtonModule /><br /><br />
+      <h2>{"React Router"}</h2>
+      <RouteExample />
+      {/* <AppLayout/> */}
     </>
   );
 }
