@@ -3,7 +3,8 @@ const Form = () => {
     const [name, setName] = useState("");
     const [age, setAge] = useState("");
     const [inputs, setInputs] = useState({});
-
+    const [textarea, setTextarea] = useState("The content of a text area goes in the value attribute");
+    const [myCar, setMyCar] = useState("Volvo");
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,6 +16,8 @@ const Form = () => {
         const name = event.target.value;
         const value = event.target.value;
         setInputs(values => ({ ...values, [name]: value }));
+        setTextarea(event.target.value);
+        setMyCar(event.target.value);
     }
     return (
         <form onSubmit={handleSubmit}>
@@ -35,7 +38,13 @@ const Form = () => {
                     onChange={handleChange}
                 />
             </label>
-            <input type="submit"/>
+            <input type="submit" /><br/><br/>
+            <textarea value={textarea} onChange={handleChange} />
+            <select value={myCar} onChange={handleChange}>
+                <option value="Ford">Ford</option>
+                <option value="Ford">Volvo</option>
+                <option value="Fiat">Fiat</option>
+            </select>
         </form>
     )
 }
