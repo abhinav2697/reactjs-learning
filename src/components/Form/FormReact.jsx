@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import "./FormReact.css";
 const FormReact = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -37,7 +37,7 @@ const FormReact = () => {
             [sub]:!prev[sub],
         }))
     }
-    const handeleReset = () => {
+    const handleReset = () => {
         setFirstName("");
         setLastName("");
         setEmail("");
@@ -55,7 +55,7 @@ const FormReact = () => {
     }
     
   return (
-      <div className='App'>
+      <div className='Form'>
           <h1>Form in React</h1>
           <fieldset>
               <form action='#' method='get'>
@@ -183,13 +183,47 @@ const FormReact = () => {
                       id="select"
                       value={selectedOption}
                       onChange={(e) => setSelectedOption(e.target.value)}>
-                      
+                      <option value=''
+                          disabled
+                          selected={selectedOption === ""}>
+                          Select your Ans
+                      </option>
+                      <optgroup label="Beginers">
+                          <option value="1">HTML</option>
+                          <option value="2">CSS</option>
+                          <option value="3">JavaScript</option>
+                      </optgroup>
+                      <optgroup label="Advance">
+                          <option value="4">React</option>
+                          <option value="5">Node</option>
+                          <option value="6">Express</option>
+                          <option value="t">MongoDB</option>
+                      </optgroup>
                   </select>
+                  <label for="about">About</label>
+                  <textarea name="about"
+                      id="about"
+                      cols="30"
+                      rows="10"
+                      onChange={(e) => setAbout(e.target.value)}
+                      placeholder='About your self'
 
+                  >
+                  </textarea>
+                  <button type="reset"
+                      value="reset"
+                      onClick={() => handleReset()}>
+                      Reset
+                  </button>
+                  <button type="submit"
+                      value="submit"
+                      onClick={(e) => handleSubmit(e)}>
+                      Submit
+                  </button>
               </form>
           </fieldset>
           FormReact</div>
   )
 }
 
-export default FormReact
+export default FormReact;
