@@ -42,8 +42,9 @@ import UserCardComponent from './components/StylingCss/UserCardComponent';
 import StyledModule from './components/StylingCss/StyledModule';
 import ButtonModule from './components/StylingCss/ButtonModule';
 import RouteExample from './components/Router/RouteExample';
-import AppLayout from './components/Router/Pages/AppLayout';
+// import AppLayout from './components/Router/Pages/AppLayout';
 import Form from './components/Form/Form';
+import FormReact from './components/Form/FormReact';
 function App() {
   return (
     <>
@@ -136,7 +137,8 @@ function App() {
       <RouteExample />
       {/* <AppLayout/> */}
       <h2>{"React Form"}</h2>
-      <Form/>
+      <Form />
+      <FormReact/>
     </>
   );
 }
