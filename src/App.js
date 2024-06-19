@@ -45,6 +45,13 @@ import RouteExample from './components/Router/RouteExample';
 // import AppLayout from './components/Router/Pages/AppLayout';
 import Form from './components/Form/Form';
 import FormReact from './components/Form/FormReact';
+// import PrivateRoutes from './components/Router/Pages/PrivateRouter/PrivateRoutes';
+import ControlledForm from './components/Form/ControlledForm';
+import ControlledSelectForm from "./components/Form/ControlledSelectForm";
+import ControlledCheckboxForm from './components/Form/ControlledCheckboxForm';
+// import YoutubeForm from './components/Form/YoutubeForm';
+import HookForm from './components/Form/HookForm';
+
 function App() {
   return (
     <>
@@ -138,8 +145,13 @@ function App() {
       {/* <AppLayout/> */}
       <h2>{"React Form"}</h2>
       <Form />
-      <FormReact/>
-<YouTubeForm/>
+      <FormReact />
+      {/* <PrivateRoutes /> */}
+      <ControlledForm />
+      <ControlledSelectForm />
+      <ControlledCheckboxForm />
+      {/* <YoutubeForm/> */}
+       <HookForm/> 
     </>
   );
 }
